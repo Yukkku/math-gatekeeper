@@ -14,6 +14,7 @@
           bun
           typescript-language-server
           vscode-langservers-extracted
+          prettier
 
           nixd
           nixfmt
