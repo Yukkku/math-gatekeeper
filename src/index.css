@@ -2,3 +2,7 @@
   color-scheme: dark light;
   font-family: monospace;
 }
+
+body {
+  margin: 0;
+}

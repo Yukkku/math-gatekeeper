@@ -1,0 +1,18 @@
+.visualize {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  height: 52px;
+  & > .cell {
+    position: absolute;
+    top: 0;
+    left: calc(50px * (var(--offset) - 50.5) + 50vw);
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    border: solid gray 2px;
+    &.one {
+      background-color: black;
+    }
+  }
+}
