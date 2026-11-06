@@ -10,7 +10,8 @@
       text-align: right;
       padding: 0 1ch;
     }
-    & > .zero, & > .one {
+    & > .zero,
+    & > .one {
       width: 9ch;
       text-align: center;
       & > .next {

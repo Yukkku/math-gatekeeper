@@ -1,12 +1,14 @@
 .visualize {
+  margin: 2em 0;
   position: relative;
   width: 100vw;
   overflow: hidden;
-  height: 52px;
+  height: 58px;
   & > .cell {
     position: absolute;
-    top: 0;
-    left: calc(50px * (var(--offset) - 50.5) + 50vw);
+    top: 3px;
+    transition: ease left 0.5s;
+    left: calc(50px * var(--offset) + 50vw);
     width: 48px;
     height: 48px;
     background-color: white;
@@ -14,5 +16,16 @@
     &.one {
       background-color: black;
     }
+    &.warp {
+      transition-duration: 0s;
+    }
+  }
+  & > .target {
+    position: absolute;
+    z-index: 1;
+    left: calc(-28px + 50vw);
+    width: 46px;
+    height: 46px;
+    border: solid red 6px;
   }
 }
